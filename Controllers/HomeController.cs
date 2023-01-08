@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Seccion_4.Models;
 
+
 namespace Seccion_4.Controllers;
 
 public class HomeController : Controller
