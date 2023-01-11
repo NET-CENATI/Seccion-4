@@ -9,16 +9,18 @@
     <table>
         <thead>
             <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Descripcion)
-                </th>
+                <th>@Html.DisplayNameFor(model => model.Descripcion)</th>
             </tr>
         </thead>
         <tbody>
             @*Aqui colocaremos, mas adelanteel codigo Para mostrar 1os registros de la base de datos*@
-            <tr>
-                <td>Traumatologo</td>
-            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                </tr>
+            }    
+              
             <tr>
                 <td>Cardiologo</td>
             </tr>
